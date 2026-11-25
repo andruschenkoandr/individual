@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Game Hub - Ігровий портал</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="#home">
+                    <span class="brand-icon">🎮</span>
+                    GAME HUB
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Відкрити меню"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">
+                                Головна
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#games">
+                                Ігри
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">
+                                Про портал
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-section" id="home">
+            <div class="container text-center">
+                <span class="hero-label">
+                    WELCOME TO GAME HUB
+                </span>
+                <h1>Твій ігровий простір</h1>
+                <p>
+                    Обирай гру і випробовуй свою вдачу!
+                </p>
+
+                <a href="#games" class="btn hero-button">
+                    Обрати гру
+                </a>
+
+            </div>
+
+        </section>
+
+<!-- Games section -->
+        <section class="games-section" id="games">
+
+            <div class="container">
+
+                <div class="section-heading text-center">
+
+                    <span>OUR COLLECTION</span>
+
+                    <h2>Наші ігри</h2>
+
+                    <p>
+                        Обери одну з чотирьох доступних ігор
+                    </p>
+
+                </div>
+
+<!-- Search -->
+                <form id="searchForm" class="search-form" novalidate>
+
+                    <div class="input-group">
+
+                        <input
+                            type="search"
+                            class="form-control"
+                            id="searchInput"
+                            placeholder="Введіть назву гри..."
+                            minlength="2"
+                            maxlength="30"
+                            required
+                            aria-label="Пошук гри"
+                        >
+
+                        <button
+                            class="btn search-button"
+                            type="submit"
+                        >
+                            Знайти
+                        </button>
+
+                    </div>
+
+                    <div
+                        class="invalid-feedback"
+                        id="searchError"
+                    >
+                        Введіть від 2 до 30 символів.
+                    </div>
+
+                    <p
+                        class="search-message"
+                        id="searchMessage"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+                <div class="row g-4" id="gamesContainer">
+
+<!-- Game 7 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-3 game-item"
+                        data-title="магічна куля magic ball"
+                    >
+
+                        <div class="card game-card h-100">
+
+                            <div class="game-image magic-image">
+                                <span>🔮</span>
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="game-number">
+                                    LABORATORY №7
+                                </span>
+
+                                <h3 class="card-title">
+                                    Магічна куля
+                                </h3>
+
+                                <p class="card-text">
+                                    Задай запитання та отримай
+                                    випадкову відповідь від магічної кулі
+                                </p>
+
+                                <a
+                                    href="https://andruschenkoandr.github.io/magicball/"
+                                    class="btn game-button"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Грати
+                                    <span>→</span>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+<!-- Game 8 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-3 game-item"
+                        data-title="кубики підкидання кубиків dice game"
+                    >
+
+                        <div class="card game-card h-100">
+
+                            <div class="game-image dice-image">
+                                <span>🎲</span>
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="game-number">
+                                    LABORATORY №8
+                                </span>
+
+                                <h3 class="card-title">
+                                    Підкидання кубиків
+                                </h3>
+
+                                <p class="card-text">
+                                    Підкидай кубики, набирай очки
+                                </p>
+
+                                <a
+                                    href="https://andruschenkoandr.github.io/Dice-game/"
+                                    class="btn game-button"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Грати
+                                    <span>→</span>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+<!-- Game 9 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-3 game-item"
+                        data-title="гра 21 карти blackjack"
+                    >
+
+                        <div class="card game-card h-100">
+
+                            <div class="game-image cards-image">
+                                <span>🃏</span>
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="game-number">
+                                    LABORATORY №9
+                                </span>
+
+                                <h3 class="card-title">
+                                    Гра 21
+                                </h3>
+
+                                <p class="card-text">
+                                    Грай картами, набирай 21 очко
+                                </p>
+
+                                <a
+                                    href="https://andruschenkoandr.github.io/21cardgame.github.io/"
+                                    class="btn game-button"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Грати
+                                    <span>→</span>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+<!-- Game 10 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-3 game-item"
+                        data-title="слоти слот однорукий бандит slot machine"
+                    >
+
+                        <div class="card game-card h-100">
+
+                            <div class="game-image slots-image">
+                                <span>🎰</span>
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="game-number">
+                                    LABORATORY №10
+                                </span>
+
+                                <h3 class="card-title">
+                                    Слоти
+                                </h3>
+
+                                <p class="card-text">
+                                    Запускай барабани та вигравай
+                                </p>
+
+                                <a
+                                    href="https://andruschenkoandr.github.io/onehandbandit.io/"
+                                    class="btn game-button"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Грати
+                                    <span>→</span>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+<!-- No results -->
+                <div id="noResults" class="no-results d-none">
+
+                    <div class="no-results-icon">🔍</div>
+
+                    <h3>Ігор не знайдено</h3>
+
+                    <p>
+                        Спробуй змінити пошуковий запит.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- About section -->
+        <section class="about-section" id="about">
+
+            <div class="container text-center">
+
+                <span class="about-label">
+                    ABOUT US
+                </span>
+
+                <h2>Про Game Hub</h2>
+
+                <p>
+                    Game Hub - це єдиний ігровий портал,
+                    який об'єднує інтерактивні вебзастосунки 
+					з 7-10 лабораторних робіт
+                    з вебтехнологій.
+                </p>
+
+                <div class="about-stat">
+
+                    <strong>4</strong>
+                    <span>Доступні ігри</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <span>
+                HTML5 - CSS3 - Bootstrap - JavaScript - jQuery
+            </span>
+        </div>
+    </footer>
+
+<!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
